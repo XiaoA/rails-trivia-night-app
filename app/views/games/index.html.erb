@@ -1,3 +1,5 @@
-<% @game_questions.each do |question| %>
-  <%= render question %>
+<h2><%= @question %></h2>
+<br />
+<% @answers.each do |answer| %>
+  <button><%= answer %></button>
 <% end %>
