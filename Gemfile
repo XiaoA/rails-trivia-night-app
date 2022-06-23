@@ -76,3 +76,5 @@ group :development, :test do
   gem 'factory_bot_rails', '~> 6.2'
   gem 'faker', '~> 2.21'
 end
+
+gem 'faraday', '~> 2.3'
