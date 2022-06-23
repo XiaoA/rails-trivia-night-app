@@ -78,3 +78,4 @@ group :development, :test do
 end
 
 gem 'faraday', '~> 2.3'
+gem 'bulma-rails', '~> 0.9.3'

@@ -72,6 +72,8 @@ GEM
     bootsnap (1.11.1)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bulma-rails (0.9.3)
+      sassc (~> 2.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -101,6 +103,7 @@ GEM
       faraday-net_http (~> 2.0)
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (2.0.3)
+    ffi (1.15.5)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.10.0)
@@ -201,6 +204,8 @@ GEM
     rspec-support (3.11.0)
     ruby2_keywords (0.0.5)
     rubyzip (2.3.2)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.1.0)
       childprocess (>= 0.5, < 5.0)
       rexml (~> 3.2, >= 3.2.5)
@@ -243,6 +248,7 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap
+  bulma-rails (~> 0.9.3)
   capybara
   debug
   factory_bot_rails (~> 6.2)

@@ -1,5 +1,19 @@
-<h2><%= @question %></h2>
 <br />
-<% @answers.each do |answer| %>
-  <button><%= answer %></button>
-<% end %>
+
+<div class="game">
+  ProgressBar
+  <div class="columns is-centered">
+    <div class="column is-half">
+      <div class="card">
+        <div class="card-content">
+          <h2><%= @question %></h2>
+          <div class="answers is-centered">
+            <% @answers.each do |answer| %>
+              <button class="button"><%= answer %></button>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
