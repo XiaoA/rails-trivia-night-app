@@ -11,10 +11,10 @@
             </div>
 
             <div class="answers is-centered">
-              <% @a = ("A".."E").to_a %>
+
               <% @answers.each_with_index do |answer, index| %>
                 <div class="answer answer-button">
-                  <div class="answer-option"><%= @a[index] %></div>
+                  <div class="answer-option"><%= @answer_options[index] %></div>
                   <div class="answer-text" title="nextButton">
                     <%= answer %>
                   </div>
