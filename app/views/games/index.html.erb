@@ -1,19 +1,29 @@
-<br />
-
 <div class="game">
   ProgressBar
   <div class="columns is-centered">
     <div class="column is-half">
+
       <div class="card">
         <div class="card-content">
-          <h2><%= @question %></h2>
-          <div class="answers is-centered">
-            <% @answers.each do |answer| %>
-              <button class="button"><%= answer %></button>
-            <% end %>
+          <div class="article">
+            <div class="content question">
+              <h2><%= @question %></h2>
+            </div>
+
+            <div class="answers is-centered">
+              <% @answers.each_with_index do |answer, index| %>
+                <div class="answer answer-button">
+                  <div class="answer-option"><%= index + 1 %></div>
+                  <div class="answer-text" title="nextButton">
+                    <%= answer %>
+                  </div>
+                </div>
+              <% end %>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </div>
+
